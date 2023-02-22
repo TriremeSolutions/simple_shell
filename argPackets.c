@@ -11,7 +11,7 @@ void argPackets(char **argv, char *duplicate, const char *delimiter)
 char *chipped;
 int c;
 chipped = strtok(duplicate, delimiter);
-for (c = 0; chipped != NULL; c++)
+	for (c = 0; chipped != NULL; c++)
 	{
 		argv[c] = malloc(sizeof(char) * strlen(chipped));
 		strcpy(argv[c], chipped);
