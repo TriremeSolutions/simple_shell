@@ -6,7 +6,7 @@
  */
 char *fetchPath(char *instructShell)
 {
-char *path, *duplPath, splitPath, fullPath;
+char *path, *duplPath, *splitPath, *fullPath;
 const char *delim, *prefix, *suffix;
 int instructLength, splitSize;
 struct stat buffer;
