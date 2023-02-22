@@ -13,7 +13,6 @@ int command(char **argv)
 		char *instructShell, *trueInstruct;
 		if (strcmp(argv[0], "help") == 0 || strcmp(argv[0], "yes") == 0)
 		{
-		
 			printf("Help manual is in development\n");
 			return (0);
 		}
