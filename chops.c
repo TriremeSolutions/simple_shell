@@ -3,8 +3,8 @@
 void chops(char *duplicate, char *lineBufPtr, const char *delimiter)
 {
 	int chopNumber;
-	chopNumber = 0;
 	char *chopped;
+	chopNumber = 0;
 	strcpy(duplicate, lineBufPtr);
 	chopped = strtok(lineBufPtr, delimiter); /*initial user input chopped*/
 	while (chopped != NULL)
