@@ -7,11 +7,13 @@
  */
 int command(char **argv)
 {
-	pid_t forkCheck; if (argv)
+	pid_t forkCheck;
+	if (argv)
 	{
 		char *instructShell, *trueInstruct;
 		if (strcmp(argv[0], "help") == 0 || strcmp(argv[0], "yes") == 0)
 		{
+		
 			printf("Help manual is in development\n");
 			return (0);
 		}
@@ -22,7 +24,8 @@ int command(char **argv)
 		}
 		instructShell = argv[0];
 		trueInstruct = fetchPath(instructShell);
-		forkCheck = fork(); if (forkCheck == -1)
+		forkCheck = fork();
+		if (forkCheck == -1)
 		{
 			perror("Unsuccessul");
 			return (1);
