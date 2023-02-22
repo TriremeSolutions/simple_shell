@@ -7,10 +7,10 @@
  */
 int command(char **argv)
 {
-	pid_t forkCheck;
+pid_t forkCheck;
 	if (argv)
 	{
-		char *instructShell, *trueInstruct;
+	char *instructShell, *trueInstruct;
 		if (strcmp(argv[0], "help") == 0 || strcmp(argv[0], "yes") == 0)
 		{
 			printf("Help manual is in development\n");
